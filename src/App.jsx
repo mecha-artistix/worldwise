@@ -35,7 +35,7 @@ function App() {
   console.log(cities);
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/worldwise/">
         <Routes>
           <Route index element={<Homepage />} />
           <Route path="product" element={<Product />} />
