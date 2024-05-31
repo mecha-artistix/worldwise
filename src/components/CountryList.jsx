@@ -1,5 +1,4 @@
 import styles from "./CountryList.module.css";
-
 import CountryItem from "./CountryItem";
 import Message from "./Message";
 import Spinner from "./Spinner";
@@ -16,7 +15,6 @@ function CountryList() {
       return [...arr, { country: city.country, emoji: city.emoji }];
     else return arr;
   }, []);
-  console.log(countries);
   return (
     <div>
       <ul className={styles.countryList}>
